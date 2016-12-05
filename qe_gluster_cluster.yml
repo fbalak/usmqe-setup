@@ -1,5 +1,8 @@
 ---
 #
+# Create gluster cluster (gluster peer probe)
+# Create bricks.
+#
 # ansible-gluster libraries required
 # https://github.com/dahorak/ansible-gluster.git or
 # https://github.com/loadtheaccumulator/ansible-gluster.git
@@ -10,3 +13,4 @@
   remote_user: root
   roles:
   - { role: qe-gluster-peers, gluster_nodes: "{{groups['gluster']}}"}
+  - qe-gluster-bricks
