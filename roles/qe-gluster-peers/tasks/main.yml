@@ -1,4 +1,7 @@
 ---
+#
+# Create gluster cluster (gluster peer probe)
+#
 # variable gluster_nodes contains list of gluster peers,
 # by defaults contains list of hosts from group gluster
 #
