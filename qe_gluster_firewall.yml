@@ -1,0 +1,11 @@
+---
+# HACK
+# FIXME: There should be proper firewall configuration!
+
+- hosts: gluster:usm_server
+  remote_user: root
+  tasks:
+  - name: stop firewall
+    name: firewalld
+    state: stopped
+    enabled: no
