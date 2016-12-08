@@ -10,3 +10,6 @@
       name: firewalld
       state: stopped
       enabled: no
+  - name: pause for 10 second
+    pause:
+      seconds: 10
