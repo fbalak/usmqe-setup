@@ -10,6 +10,7 @@
       name: firewalld
       state: stopped
       enabled: no
+    ignore_errors: yes
   - name: pause for 10 second
     pause:
       seconds: 10
