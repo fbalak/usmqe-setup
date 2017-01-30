@@ -1,0 +1,15 @@
+---
+- hosts: usm_server 
+  remote_user: root
+  roles:
+    - tendrl-test-server
+
+- hosts: gluster
+  remote_user: root
+  roles:
+    - tendrl-test-gluster
+
+- hosts: ceph
+  remote_user: root
+  roles:
+    - tendrl-test-ceph

@@ -1,0 +1,17 @@
+#
+# test if services run properly
+#
+
+# as documented in README file and deployment.adoc from Tendrl/documentation
+- name: Start and enable tendrl-node-agent daemon
+  service:
+    name=tendrl-node-agent
+    state=started
+    enabled=yes
+
+- name: Start and enable tendrl-ceph-integration service
+  service:
+    name=tendrl-cephd
+    state=started
+    enabled=yes
+    
